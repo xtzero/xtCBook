@@ -1,0 +1,1015 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>结构体的概念与定义 · xtCBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="xt">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="c72.html" />
+    
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"xtzero","repo":"xtCBook","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    HOME
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    开篇 封皮与目录
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../s0/c01.html">
+            
+                <a href="../s0/c01.html">
+            
+                    
+                    封皮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../s0/c02.html">
+            
+                <a href="../s0/c02.html">
+            
+                    
+                    原文档目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../s0/c03.html">
+            
+                <a href="../s0/c03.html">
+            
+                    
+                    摘要和关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    第1部分 概述
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../s1/c11.html">
+            
+                <a href="../s1/c11.html">
+            
+                    
+                    C语言概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../s2/c12.md">
+            
+                <span>
+            
+                    
+                    算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    第2部分 数据类型与表达式
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../s2/c21.html">
+            
+                <a href="../s2/c21.html">
+            
+                    
+                    数据类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../s2/c22.html">
+            
+                <a href="../s2/c22.html">
+            
+                    
+                    运算符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../s2/c23.html">
+            
+                <a href="../s2/c23.html">
+            
+                    
+                    语句
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../s2/c24.html">
+            
+                <a href="../s2/c24.html">
+            
+                    
+                    输入与输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../s2/c25.html">
+            
+                <a href="../s2/c25.html">
+            
+                    
+                    练习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    第3部分 流程控制
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../s3/c31.html">
+            
+                <a href="../s3/c31.html">
+            
+                    
+                    选择结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../s3/c32.html">
+            
+                <a href="../s3/c32.html">
+            
+                    
+                    循环结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../s3/c33.html">
+            
+                <a href="../s3/c33.html">
+            
+                    
+                    练习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    第4部分 函数与程序的模块化设计
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../s4/c41.html">
+            
+                <a href="../s4/c41.html">
+            
+                    
+                    函数概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../s4/c42.html">
+            
+                <a href="../s4/c42.html">
+            
+                    
+                    函数的定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../s4/c43.html">
+            
+                <a href="../s4/c43.html">
+            
+                    
+                    函数的声明与调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../s4/c44.html">
+            
+                <a href="../s4/c44.html">
+            
+                    
+                    函数的递归调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../s4/c45.html">
+            
+                <a href="../s4/c45.html">
+            
+                    
+                    局部变量与全局变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../s4/c46.html">
+            
+                <a href="../s4/c46.html">
+            
+                    
+                    变量的声明与定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    第5部分 数组
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../s5/c50.html">
+            
+                <a href="../s5/c50.html">
+            
+                    
+                    简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../s5/c51.html">
+            
+                <a href="../s5/c51.html">
+            
+                    
+                    一维数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../s5/c52.html">
+            
+                <a href="../s5/c52.html">
+            
+                    
+                    二维数组与引申
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="../s5/c53.html">
+            
+                <a href="../s5/c53.html">
+            
+                    
+                    字符数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="../s5/c54.html">
+            
+                <a href="../s5/c54.html">
+            
+                    
+                    练习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    第6部分 指针初步
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../s6/c61.html">
+            
+                <a href="../s6/c61.html">
+            
+                    
+                    指针概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../s6/c62.html">
+            
+                <a href="../s6/c62.html">
+            
+                    
+                    定义与引用指针
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../s6/c63.html">
+            
+                <a href="../s6/c63.html">
+            
+                    
+                    指针与数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../s6/c64.html">
+            
+                <a href="../s6/c64.html">
+            
+                    
+                    练习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    第7部分 自定义数据类型
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.9.1" data-path="c71.html">
+            
+                <a href="c71.html">
+            
+                    
+                    结构体的概念与定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" data-path="c72.html">
+            
+                <a href="c72.html">
+            
+                    
+                    结构体类型的变量
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" data-path="c73.html">
+            
+                <a href="c73.html">
+            
+                    
+                    结构体数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" data-path="c74.html">
+            
+                <a href="c74.html">
+            
+                    
+                    结构体与指针的结合
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" data-path="c75.html">
+            
+                <a href="c75.html">
+            
+                    
+                    枚举类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.6" data-path="c76.html">
+            
+                <a href="c76.html">
+            
+                    
+                    其他的自定义类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.7" data-path="c77.html">
+            
+                <a href="c77.html">
+            
+                    
+                    练习题
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    第8部分 附录
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../s8/c81.html">
+            
+                <a href="../s8/c81.html">
+            
+                    
+                    附录1：ASCII码对照表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" data-path="../s8/c82.html">
+            
+                <a href="../s8/c82.html">
+            
+                    
+                    C语言中的关键字
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" data-path="../s8/c83.html">
+            
+                <a href="../s8/c83.html">
+            
+                    
+                    参考文献
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.11" >
+            
+                <span>
+            
+                    
+                    第9部分 后记
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.11.1" data-path="../s9/c9.html">
+            
+                <a href="../s9/c9.html">
+            
+                    
+                    后记
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >结构体的概念与定义</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x6982;&#x5FF5;&#x4E0E;&#x5B9A;&#x4E49;"><a name="&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x6982;&#x5FF5;&#x4E0E;&#x5B9A;&#x4E49;" class="plugin-anchor" href="#&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x6982;&#x5FF5;&#x4E0E;&#x5B9A;&#x4E49;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x6982;&#x5FF5;&#x4E0E;&#x5B9A;&#x4E49;</h1>
+<p>&#x5728;&#x524D;&#x9762;&#x7684;&#x5B66;&#x4E60;&#x4E2D;&#xFF0C;&#x53D8;&#x91CF;&#x5927;&#x591A;&#x90FD;&#x662F;&#x4E92;&#x76F8;&#x72EC;&#x7ACB;&#x7684;&#xFF0C;&#x5373;&#x4F7F;&#x662F;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x5730;&#x5740;&#x4E5F;&#x662F;&#x4E92;&#x76F8;&#x6BEB;&#x65E0;&#x5E72;&#x7CFB;&#x7684;&#x3002;&#x5373;&#x4F7F;&#x662F;&#x6570;&#x7EC4;&#xFF0C;&#x4E5F;&#x53EA;&#x662F;&#x8981;&#x6C42;&#x5176;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x5FC5;&#x987B;&#x662F;&#x540C;&#x6837;&#x7684;&#x7C7B;&#x578B;&#x3002;&#x90A3;&#x4E48;&#x53EF;&#x4EE5;&#x4E0D;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x79CD;&#x7ED3;&#x6784;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x4E00;&#x4E9B;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x7684;&#x53D8;&#x91CF;&#x653E;&#x5728;&#x4E00;&#x8D77;&#xFF0C;&#x800C;&#x4ED6;&#x4EEC;&#x53C8;&#x5177;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x8054;&#x7CFB;&#x5462;&#xFF1F;&#x4F8B;&#x5982;&#x4E00;&#x4E2A;&#x5B66;&#x751F;&#x7684;&#x8D44;&#x6599;&#xFF0C;&#x5176;&#x4E2D;&#x6709;&#x5B66;&#x53F7;&#x3001;&#x59D3;&#x540D;&#x3001;&#x6027;&#x522B;&#x3001;&#x5E74;&#x9F84;&#x3001;&#x5730;&#x5740;&#x3002;C&#x8BED;&#x8A00;&#x4E2D;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x81EA;&#x5DF1;&#x5EFA;&#x7ACB;&#x7531;&#x4E0D;&#x540C;&#x7C7B;&#x578B;&#x6570;&#x636E;&#x7EC4;&#x6210;&#x7684;&#x7EC4;&#x5408;&#x578B;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x53EB;&#x505A;&#x201C;&#x7ED3;&#x6784;&#x4F53;&#x201D;&#x3002;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x7ED3;&#x6784;&#x4F53;&#x4E5F;&#x662F;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF0C;&#x4F8B;&#x5982;&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x81EA;&#x884C;&#x521B;&#x5EFA;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span>  Student
+{
+    <span class="hljs-keyword">int</span>  num;
+    <span class="hljs-keyword">char</span>  name[<span class="hljs-number">20</span>];
+    <span class="hljs-keyword">char</span>  sex;
+    <span class="hljs-keyword">int</span>  age;
+    <span class="hljs-keyword">char</span>  add[<span class="hljs-number">30</span>];
+} ;
+</code></pre>
+<p>struct&#x662F;&#x7ED3;&#x6784;&#x4F53;&#x7C7B;&#x578B;&#x7684;&#x6807;&#x8BC6;&#x7B26;&#xFF0C;Student&#x662F;&#x7528;&#x6237;&#x81EA;&#x5B9A;&#x4E49;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x540D;&#x79F0;&#xFF0C;&#x5C31;&#x50CF;int  a&#x4E2D;&#x7684;a&#x662F;&#x53D8;&#x91CF;&#x540D;&#x79F0;&#x4E00;&#x6837;&#x3002;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x4E2D;&#x6709;5&#x4E2A;&#x6210;&#x5458;&#xFF0C;&#x5206;&#x522B;&#x662F;num&#x3001;name&#x3001;sex&#x3001;age&#x3001;add&#xFF0C;&#x5B83;&#x4EEC;&#x5404;&#x81EA;&#x6709;&#x81EA;&#x5DF1;&#x7684;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x5360;4 + 20 + 1 + 4 + 30 = 59&#x5B57;&#x8282;&#x3002;&#x4E0A;&#x9762;&#x5B9A;&#x4E49;&#x7684;&#x7ED3;&#x6784;&#x4F53;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x793A;&#x610F;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center">Student</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">num</td>
+<td style="text-align:center">name</td>
+<td style="text-align:center">sex</td>
+<td style="text-align:center">age</td>
+<td style="text-align:center">add</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x4E00;&#x822C;&#x5F62;&#x5F0F;&#x4E3A;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span>  &#x7ED3;&#x6784;&#x4F53;&#x540D;
+{
+    <span class="hljs-comment">//&#x6210;&#x5458;&#x8868;&#x5217;</span>
+    &#x7C7B;&#x578B;&#x540D;  &#x6210;&#x5458;&#x540D;;
+} ;
+</code></pre>
+<p>&#x5B9A;&#x4E49;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x65F6;&#x5019;&#x4E0D;&#x8981;&#x5FD8;&#x4E86;&#x672B;&#x5C3E;&#x6709;&#x5206;&#x53F7;&#x3002;&#x7ED3;&#x6784;&#x4F53;&#x8868;&#x73B0;&#x7684;&#x662F;&#x201C;&#x5305;&#x542B;&#x201D;&#x5173;&#x7CFB;&#xFF0C;&#x5982;&#x4E0A;&#x4F8B;&#x5373;&#x8868;&#x793A;Student&#x4E2D;&#x5305;&#x542B;&#x4E86;num&#x3001;name&#x3001;sex&#x3001;age&#x3001;add&#x4E94;&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x6210;&#x5458;&#x53EF;&#x4EE5;&#x5C5E;&#x4E8E;&#x53E6;&#x5916;&#x4E00;&#x4E2A;&#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span>  Date
+{
+    <span class="hljs-keyword">int</span>  month;
+    <span class="hljs-keyword">int</span>  day;
+    <span class="hljs-keyword">int</span>  year;
+} ;
+<span class="hljs-keyword">struct</span>  Student
+{
+    <span class="hljs-keyword">char</span>  name[<span class="hljs-number">20</span>];
+    <span class="hljs-keyword">int</span>  age;
+    <span class="hljs-keyword">char</span>  sex;
+    <span class="hljs-keyword">char</span>  add[<span class="hljs-number">30</span>];
+    <span class="hljs-keyword">struct</span>  Date  birthday;
+} ;
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x65F6;&#x5019;&#xFF0C;&#x6B64;&#x7ED3;&#x6784;&#x4F53;&#x7684;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="img/6-4.png" alt=""> </p>
+<footer class="page-footer"><span class="copyright">&#x8FD9;&#x672C;&#x4E66;&#x662F;xt&#x5199;&#x7684;</span><span class="footer-modification">&#x4E0A;&#x6B21;&#x4FEE;&#x6539;&#xFF1A;
+2019-04-18 15:37:40
+</span></footer>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="c72.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 结构体类型的变量">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"结构体的概念与定义","level":"1.9.1","depth":2,"next":{"title":"结构体类型的变量","level":"1.9.2","depth":2,"path":"s7/c72.md","ref":"s7/c72.md","articles":[]},"previous":{"title":"第7部分 自定义数据类型","level":"1.9","depth":1,"ref":"","articles":[{"title":"结构体的概念与定义","level":"1.9.1","depth":2,"path":"s7/c71.md","ref":"s7/c71.md","articles":[]},{"title":"结构体类型的变量","level":"1.9.2","depth":2,"path":"s7/c72.md","ref":"s7/c72.md","articles":[]},{"title":"结构体数组","level":"1.9.3","depth":2,"path":"s7/c73.md","ref":"s7/c73.md","articles":[]},{"title":"结构体与指针的结合","level":"1.9.4","depth":2,"path":"s7/c74.md","ref":"s7/c74.md","articles":[]},{"title":"枚举类型","level":"1.9.5","depth":2,"path":"s7/c75.md","ref":"s7/c75.md","articles":[]},{"title":"其他的自定义类型","level":"1.9.6","depth":2,"path":"s7/c76.md","ref":"s7/c76.md","articles":[]},{"title":"练习题","level":"1.9.7","depth":2,"path":"s7/c77.md","ref":"s7/c77.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","anchors","github","github-buttons","sharing-plus","-anchor-navigation-ex","code","search-pro","-lunr","-search","tbfed-pagefooter"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"这本书是xt写的","modify_label":"上次修改：","modify_format":"YYYY-MM-DD HH:mm:ss"},"github":{"url":"https://github.com/xtzero/xtCBook"},"splitter":{},"search-pro":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"showLevel":true},"github-buttons":{"buttons":[{"user":"xtzero","repo":"xtCBook","type":"star","size":"small","count":true}]},"sharing":{"douban":true,"facebook":false,"google":false,"pocket":false,"qq":true,"qzone":true,"twitter":false,"weibo":true},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"xt","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"xtCBook","language":"zh-hans","gitbook":"3.2.3","description":"my Cbook"},"file":{"path":"s7/c71.md","mtime":"2019-04-18T07:37:40.653Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-18T07:56:38.837Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
